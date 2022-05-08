@@ -1,0 +1,147 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  background-color: #e0e9ff;
+}
+
+.order {
+  width: 450px;
+  height: 697px;
+  border-radius: 20px;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: white;
+  -webkit-box-shadow: 0px 29px 30px -10px #c7d0f7;
+          box-shadow: 0px 29px 30px -10px #c7d0f7;
+}
+
+.order__img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.order__body {
+  padding: 0 47px;
+  text-align: center;
+}
+
+.order__title {
+  font-weight: 900;
+  font-size: 1.8em;
+  margin: 1.4em 0 0.55em 0;
+  color: #14203d;
+}
+
+.order__text {
+  margin: 0.5em 0;
+  padding: auto;
+  color: #7280a7;
+  line-height: 1.6em;
+}
+
+.order__plan {
+  height: 100px;
+  margin: 20px 0 32px 0;
+  background-color: #f6f7fe;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.order__plan-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.order__plan-img {
+  margin: 22px;
+}
+
+.order__plan-change-btn {
+  border: none;
+  margin: 25px;
+  font-size: 0.8em;
+  font-weight: 900;
+  background-color: #f6f7fe;
+  color: #39329a;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.order__plan-change-btn:hover {
+  color: #756af1;
+}
+
+.order__plan-title {
+  font-size: 1.03em;
+  margin-bottom: 0.4em;
+  font-weight: 900;
+  color: #14203d;
+}
+
+.order__plan-price {
+  font-size: 1em;
+  color: #7280a7;
+}
+
+.order__pay-btn {
+  display: block;
+  margin: 20px 0 30px 0;
+  width: 100%;
+  height: 50px;
+  border: none;
+  font-weight: 700;
+  border-radius: 10px;
+  letter-spacing: 0.05em;
+  font-size: 0.85em;
+  background-color: #3829e0;
+  color: white;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 29px 30px -10px #d6d3ff;
+          box-shadow: 0px 29px 30px -10px #d6d3ff;
+}
+
+.order__pay-btn:hover {
+  background-color: #756af1;
+}
+
+.order__cancel-btn {
+  font-size: 0.85em;
+  font-weight: 900;
+  background: transparent;
+  color: #7280a7;
+  border: none;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+}
+
+.order__cancel-btn:hover {
+  color: #14203d;
+}
