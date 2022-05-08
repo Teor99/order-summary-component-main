@@ -17,6 +17,9 @@ body {
           justify-content: center;
   height: 100vh;
   background-color: #e0e9ff;
+  background-image: url("/images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .order {
@@ -138,7 +141,6 @@ body {
   background: transparent;
   color: #7280a7;
   border: none;
-  letter-spacing: 0.05em;
   cursor: pointer;
 }
 

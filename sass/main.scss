@@ -30,6 +30,9 @@ body {
   justify-content: center;
   height: 100vh;
   background-color: $body-bg-color;
+  background-image: url("/images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .order {
@@ -138,7 +141,6 @@ body {
     background: transparent;
     color: $order-text-color;
     border: none;
-    letter-spacing: 0.05em;
     cursor: pointer;
 
     &:hover {
