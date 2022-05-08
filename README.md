@@ -4,13 +4,13 @@
 
 ## Deployed page
 
-- [github.io](#)
+- [github.io](https://teor99.github.io/order-summary-component-main/)
 
 ## Links
 
-- [Frontend Mentor coding challenge](#)
-- [My challenge](#)
-- [My solution](#)
+- [Frontend Mentor coding challenge](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj)
+- [My challenge](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj/hub/order-summary-card-HJl5lrr8c)
+- [My solution](https://www.frontendmentor.io/solutions/order-summary-card-HJl5lrr8c)
 - [style-guide.md](./style-guide.md)
 
 ## Design
