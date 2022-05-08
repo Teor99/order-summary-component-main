@@ -30,32 +30,60 @@ body {
   font-size: 16px;
   font-weight: 500;
   background-color: white;
-  -webkit-box-shadow: 0px 29px 30px -10px #c7d0f7;
-          box-shadow: 0px 29px 30px -10px #c7d0f7;
+  -webkit-box-shadow: 0px 29px 30px -10px #c5cef7;
+          box-shadow: 0px 29px 30px -10px #c5cef7;
+}
+
+@media screen and (max-width: 480px) {
+  .order {
+    width: 327px;
+    height: 567px;
+  }
 }
 
 .order__img {
+  width: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
 
 .order__body {
-  padding: 0 47px;
   text-align: center;
+  padding: 0 47px;
+}
+
+@media screen and (max-width: 480px) {
+  .order__body {
+    padding: 0 24px;
+  }
 }
 
 .order__title {
+  color: #14203d;
   font-weight: 900;
   font-size: 1.8em;
   margin: 1.4em 0 0.55em 0;
-  color: #14203d;
+}
+
+@media screen and (max-width: 480px) {
+  .order__title {
+    font-size: 1.4em;
+    margin: 1.2em 0 0.7em 0;
+  }
 }
 
 .order__text {
-  margin: 0.5em 0;
-  padding: auto;
   color: #7280a7;
+  margin: 0.5em 0;
   line-height: 1.6em;
+}
+
+@media screen and (max-width: 480px) {
+  .order__text {
+    font-size: 0.95em;
+    line-height: 1.6em;
+    padding: 0 0.5em;
+  }
 }
 
 .order__plan {
@@ -74,6 +102,13 @@ body {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 480px) {
+  .order__plan {
+    height: 80px;
+    margin: 25px 0;
+  }
+}
+
 .order__plan-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -83,19 +118,42 @@ body {
           align-items: center;
 }
 
+.order__plan-tariff {
+  margin: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .order__plan-tariff {
+    margin: 5px;
+  }
+}
+
 .order__plan-img {
   margin: 22px;
 }
 
+@media screen and (max-width: 480px) {
+  .order__plan-img {
+    margin: 15px;
+  }
+}
+
 .order__plan-change-btn {
   border: none;
-  margin: 25px;
   font-size: 0.8em;
+  margin: 25px;
   font-weight: 900;
   background-color: #f6f7fe;
-  color: #39329a;
+  color: #4e47b3;
   text-decoration: underline;
   cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .order__plan-change-btn {
+    font-size: 0.75em;
+    margin: 15px;
+  }
 }
 
 .order__plan-change-btn:hover {
@@ -103,15 +161,28 @@ body {
 }
 
 .order__plan-title {
-  font-size: 1.03em;
-  margin-bottom: 0.4em;
   font-weight: 900;
   color: #14203d;
+  font-size: 1.03em;
+  margin-bottom: 0.4em;
+}
+
+@media screen and (max-width: 480px) {
+  .order__plan-title {
+    font-size: 0.9em;
+    margin-bottom: 0.1em;
+  }
 }
 
 .order__plan-price {
-  font-size: 1em;
   color: #7280a7;
+  font-size: 1em;
+}
+
+@media screen and (max-width: 480px) {
+  .order__plan-price {
+    font-size: 0.9em;
+  }
 }
 
 .order__pay-btn {
@@ -127,8 +198,14 @@ body {
   background-color: #3829e0;
   color: white;
   cursor: pointer;
-  -webkit-box-shadow: 0px 29px 30px -10px #d6d3ff;
-          box-shadow: 0px 29px 30px -10px #d6d3ff;
+  -webkit-box-shadow: 0px 29px 30px -10px #d4d1ff;
+          box-shadow: 0px 29px 30px -10px #d4d1ff;
+}
+
+@media screen and (max-width: 480px) {
+  .order__pay-btn {
+    margin: 20px 0 25px 0;
+  }
 }
 
 .order__pay-btn:hover {

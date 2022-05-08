@@ -3,11 +3,12 @@ $order-bg-color: white;
 $order-text-color: hsl(224, 23%, 55%);
 $order-title-color: hsl(223, 50%, 16%);
 $plan-bg-color: hsl(230, 75%, 98%);
-$change-btn-color: hsl(244, 51%, 40%);
+$change-btn-color: hsl(244, 43%, 49%);
 $pay-btn-bg-color: hsl(245, 75%, 52%);
 $pay-btn-hover-color: hsl(245, 83%, 68%);
-//
 $body-bg-color: hsl(223, 100%, 94%);
+$order-card-shadow-color: hsl(229, 75%, 87%);
+$pay-btn-shadow-color: hsl(244, 100%, 91%);
 
 // font
 $font-family: "Red Hat Display", sans-serif;
@@ -15,7 +16,15 @@ $font-weight-normal: 500;
 $font-weight-middle: 700;
 $font-weight-title: 900;
 $font-size: 16px;
-//
+
+// order card sizes
+$desktop-order-width: 450px;
+$desktop-order-height: 697px;
+$mobile-order-width: 327px;
+$mobile-order-height: 567px;
+
+$mobile-max-width: 480px;
+
 $border-radius: 20px;
 
 * {
@@ -36,42 +45,64 @@ body {
 }
 
 .order {
-  width: 450px;
-  height: 697px;
+  width: $desktop-order-width;
+  height: $desktop-order-height;
+  @media screen and (max-width: $mobile-max-width) {
+    width: $mobile-order-width;
+    height: $mobile-order-height;
+  }
   border-radius: $border-radius;
   font-family: $font-family;
   font-size: $font-size;
   font-weight: $font-weight-normal;
   background-color: $order-bg-color;
-  box-shadow: 0px 29px 30px -10px #c7d0f7;
+  box-shadow: 0px 29px 30px -10px $order-card-shadow-color;
 
   &__img {
+    width: 100%;
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
   }
 
   &__body {
-    padding: 0 47px;
     text-align: center;
+    padding: 0 47px;
+    @media screen and (max-width: $mobile-max-width) {
+      padding: 0 24px;
+    }
   }
 
   &__title {
+    color: $order-title-color;
     font-weight: $font-weight-title;
     font-size: 1.8em;
     margin: 1.4em 0 0.55em 0;
-    color: $order-title-color;
+    @media screen and (max-width: $mobile-max-width) {
+      font-size: 1.4em;
+      margin: 1.2em 0 0.7em 0;
+    }
   }
 
   &__text {
-    margin: 0.5em 0;
-    padding: auto;
     color: $order-text-color;
+    margin: 0.5em 0;
+
     line-height: 1.6em;
+    @media screen and (max-width: $mobile-max-width) {
+      font-size: 0.95em;
+      line-height: 1.6em;
+      padding: 0 0.5em;
+    }
   }
 
   &__plan {
     height: 100px;
     margin: 20px 0 32px 0;
+    @media screen and (max-width: $mobile-max-width) {
+      height: 80px;
+      margin: 25px 0;
+    }
+
     background-color: $plan-bg-color;
     border-radius: 15px;
     display: flex;
@@ -83,14 +114,28 @@ body {
       align-items: center;
     }
 
+    &-tariff {
+      margin: 0;
+      @media screen and (max-width: $mobile-max-width) {
+        margin: 5px;
+      }
+    }
+
     &-img {
       margin: 22px;
+      @media screen and (max-width: $mobile-max-width) {
+        margin: 15px;
+      }
     }
 
     &-change-btn {
       border: none;
-      margin: 25px;
       font-size: 0.8em;
+      margin: 25px;
+      @media screen and (max-width: $mobile-max-width) {
+        font-size: 0.75em;
+        margin: 15px;
+      }
       font-weight: $font-weight-title;
       background-color: $plan-bg-color;
       color: $change-btn-color;
@@ -103,21 +148,32 @@ body {
     }
 
     &-title {
-      font-size: 1.03em;
-      margin-bottom: 0.4em;
       font-weight: $font-weight-title;
       color: $order-title-color;
+
+      font-size: 1.03em;
+      margin-bottom: 0.4em;
+      @media screen and (max-width: $mobile-max-width) {
+        font-size: 0.9em;
+        margin-bottom: 0.1em;
+      }
     }
 
     &-price {
-      font-size: 1em;
       color: $order-text-color;
+      font-size: 1em;
+      @media screen and (max-width: $mobile-max-width) {
+        font-size: 0.9em;
+      }
     }
   }
 
   &__pay-btn {
     display: block;
     margin: 20px 0 30px 0;
+    @media screen and (max-width: $mobile-max-width) {
+      margin: 20px 0 25px 0;
+    }
     width: 100%;
     height: 50px;
     border: none;
@@ -128,7 +184,7 @@ body {
     background-color: $pay-btn-bg-color;
     color: $order-bg-color;
     cursor: pointer;
-    box-shadow: 0px 29px 30px -10px #d6d3ff;
+    box-shadow: 0px 29px 30px -10px $pay-btn-shadow-color;
 
     &:hover {
       background-color: $pay-btn-hover-color;
