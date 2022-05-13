@@ -12,9 +12,9 @@ $pay-btn-shadow-color: hsl(244, 100%, 91%);
 
 // font
 $font-family: "Red Hat Display", sans-serif;
-$font-weight-normal: 500;
-$font-weight-middle: 700;
-$font-weight-title: 900;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$font-weight-extrabold: 900;
 $font-size: 16px;
 
 // order card sizes
@@ -37,7 +37,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
+  padding: 2em 0;
   background-color: $body-bg-color;
   background-image: url("../images/pattern-background-desktop.svg");
   @media screen and (max-width: $mobile-max-width) {
@@ -57,7 +58,7 @@ body {
   border-radius: $border-radius;
   font-family: $font-family;
   font-size: $font-size;
-  font-weight: $font-weight-normal;
+  font-weight: $font-weight-medium;
   background-color: $order-bg-color;
   box-shadow: 0px 29px 30px -10px $order-card-shadow-color;
 
@@ -77,7 +78,7 @@ body {
 
   &__title {
     color: $order-title-color;
-    font-weight: $font-weight-title;
+    font-weight: $font-weight-extrabold;
     font-size: 1.8em;
     margin: 1.4em 0 0.55em 0;
     @media screen and (max-width: $mobile-max-width) {
@@ -139,19 +140,20 @@ body {
         font-size: 0.75em;
         margin: 15px;
       }
-      font-weight: $font-weight-title;
+      font-weight: $font-weight-extrabold;
       background-color: $plan-bg-color;
       color: $change-btn-color;
       text-decoration: underline;
       cursor: pointer;
 
       &:hover {
+        transition: all 300ms;
         color: $pay-btn-hover-color;
       }
     }
 
     &-title {
-      font-weight: $font-weight-title;
+      font-weight: $font-weight-extrabold;
       color: $order-title-color;
 
       font-size: 1.03em;
@@ -180,7 +182,7 @@ body {
     width: 100%;
     height: 50px;
     border: none;
-    font-weight: $font-weight-middle;
+    font-weight: $font-weight-bold;
     border-radius: 10px;
     letter-spacing: 0.05em;
     font-size: 0.85em;
@@ -190,19 +192,21 @@ body {
     box-shadow: 0px 29px 30px -10px $pay-btn-shadow-color;
 
     &:hover {
+      transition: all 300ms;
       background-color: $pay-btn-hover-color;
     }
   }
 
   &__cancel-btn {
     font-size: 0.85em;
-    font-weight: $font-weight-title;
+    font-weight: $font-weight-extrabold;
     background: transparent;
     color: $order-text-color;
     border: none;
     cursor: pointer;
 
     &:hover {
+      transition: all 300ms;
       color: $order-title-color;
     }
   }
